@@ -88,7 +88,7 @@ public:
   }
   
   Circle& operator=(const Circle & rho);  //Example of body outside of class
-  friend ostream& operator<< (ostream&, const Circle &);  //Friend function synthax
+  friend ostream& operator<< (ostream&, const Circle &);  //Friend function syntax
   friend istream& operator>> (istream&, Circle &);
   
 };
