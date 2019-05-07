@@ -112,12 +112,16 @@ istream& operator>> (istream& in, Circle & c){
 int
 main ()
 {
+    
+  cout<<"-------------------------------" << endl;
+  cout<<"     Operator Overloading      " << endl;
+  cout<<"-------------------------------" << endl;
   cout << "Circle one: ";  
-  Circle one (8);
+  Circle one (9);
   one.display ();
 
   cout << "Circle two: ";
-  Circle two (5);
+  Circle two (17);
   two.display ();
   
   cout << "Circle one + two: ";
@@ -148,17 +152,33 @@ main ()
   cout << "Circle two-- after: ";
   two.display();
   
-  cout << seven;
+  cout<<"-------------------------------" << endl;
+  cout<<"   Arithmetic Overloading      " << endl;
+  cout<<"-------------------------------" << endl;
   
+  cout << "Current value of circle one: ";
+  one.display();
+  cout << "Current value of circle two: ";
+  two.display();
   
-  Circle nine(9);
-  Circle ten(10);
-  ten.setRadius(50);
- 
-  cout << nine << " " << ten ;
-  cout <<"\nLarger? "<<(nine>ten);
- 
-
+  cout << "Circle one > two: ";
+  cout << (one>two) << endl;
+  
+  cout << "Circle one < two: ";
+  cout << (one<two) << endl;
+  
+  cout << "Circle one == two: ";
+  cout << (one==two) << endl;
+  
+  cout << "Circle one != two: ";
+  cout << (one!=two) << endl;
+  
+  cout << "Circle one >= two: ";
+  cout << (one>=two) << endl;
+  
+  cout << "Circle one <= two: ";
+  cout << (one<=two) << endl;  
 
   return 0;
 }
+
